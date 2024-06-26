@@ -71,3 +71,4 @@ buttonIds.forEach(function(id) {
     section.scrollIntoView(true);
   });
 });
+
