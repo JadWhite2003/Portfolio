@@ -17,6 +17,9 @@
 </head>
 
 <body>
+    <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <section class="sidenav" id="navbar">
         <div class="menu"><img src="IMAGES/portfoliogo.png" alt="Logo" class="logo" onclick="openNav()">
             <i id="bar" class="fa-solid fa-bars" onclick="openNav()"></i>
@@ -192,31 +195,33 @@
                     <p>Electronjs proj</p>
                 </div>
             </div> End copy here-->  
-            <div class="projectitem">
+            <div class="search"><input type="text" class="searchBar" id="projSearch" onkeyup="searchFilter()" placeholder="Search by language E.g HTML...">
+            </div>
+            <div class="projectitem html1 css1 javascript1" >
                 <a href="https://to-do-list-proj.vercel.app/" target="_blank"><img src="IMAGES/projects/Screenshot 2023-02-08 153758.png" alt="image"></a>
                 <div class="projectitem-inner">
-                    <p>To-Do List</p>
+                    <p class="">To-Do List</p>
                 </div>
             </div>
-            <div class="projectitem">
+            <div class="projectitem html1" >
                <a href="https://ecommerce-proj.vercel.app/" target="_blank"> <img src="IMAGES/projects/Screenshot 2023-02-08 153554.png" alt="image"></a>
                 <div class="projectitem-inner">
                     <p>E-Commerce Website</p>
                 </div>
             </div>
-            <div class="projectitem">
+            <div class="projectitem python1" >
                 <a href="https://github.com/JadWhite2003/Python-Db-proj.git"><img src="IMAGES/Python-Symbol.png" alt="image"></a>
                 <div class="projectitem-inner">
                     <p>Python database</p>
                 </div>
             </div>
-            <div class="projectitem">
+            <div class="projectitem javascript1" >
                 <img src="IMAGES/Electron_Software_Framework_Logo.svg.png" alt="image">
                 <div class="projectitem-inner">
                     <p>Electronjs proj</p>
                 </div>
             </div>
-            <div class="projectitem">
+            <div class="projectitem html1 css1" >
                 <a href="https://chooseplan-proj-dii3.vercel.app/" target="_blank"><img src="IMAGES/projects/html-cssproj.png" alt="image"></a>
                 <div class="projectitem-inner">
                     <p>Choose your plan</p>
@@ -287,6 +292,12 @@
 
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/1044279744.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow")
+        });
+    </script>
 </body>
 
 </html>
